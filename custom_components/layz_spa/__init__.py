@@ -1,5 +1,7 @@
 """The Lay-Z Spa integration."""
 import asyncio
+
+from voluptuous.validators import Switch
 from homeassistant.const import CONF_EMAIL, CONF_NAME, CONF_PASSWORD
 import logging
 import voluptuous as vol
@@ -22,7 +24,7 @@ from homeassistant.helpers.update_coordinator import (
 
 CONFIG_SCHEMA = vol.Schema({DOMAIN: vol.Schema({})}, extra=vol.ALLOW_EXTRA)
 
-PLATFORMS = ["water_heater"]
+PLATFORMS = ["water_heater", "switch"]
 
 _LOGGER = logging.getLogger(__name__)
 
