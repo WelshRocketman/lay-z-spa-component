@@ -24,7 +24,7 @@ from homeassistant.helpers.update_coordinator import (
 
 CONFIG_SCHEMA = vol.Schema({DOMAIN: vol.Schema({})}, extra=vol.ALLOW_EXTRA)
 
-PLATFORMS = ["water_heater", "switch"]
+PLATFORMS = ["water_heater", "switch", "binary_sensor"]
 
 _LOGGER = logging.getLogger(__name__)
 
